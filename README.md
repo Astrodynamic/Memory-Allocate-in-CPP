@@ -9,6 +9,11 @@ This project is an implementation of a memory management library written in C++.
   - [Introduction](#introduction)
   - [Building the Project](#building-the-project)
   - [Dependencies](#dependencies)
+  - [Console interface for the visualization](#console-interface-for-the-visualization)
+      - [void init(std::size\_t size);](#void-initstdsize_t-size)
+      - [void \*malloc (size\_t size);](#void-malloc-size_t-size)
+      - [template  bool write(void\* ptr, const std::vector\& src);](#template--bool-writevoid-ptr-const-stdvector-src)
+      - [void dump();](#void-dump)
   - [Usage](#usage)
     - [Function description](#function-description)
   - [License](#license)
@@ -42,6 +47,28 @@ The project requires the following dependencies:
 
 - CMake 3.15 or later
 - C++17
+
+## Console interface for the visualization
+
+---
+#### void init(std::size_t size);
+![init](img/init.png)
+
+---
+#### void *malloc (size_t size);
+![malloc](img/malloc.png)
+
+---
+
+#### template <typename T> bool write(void* ptr, const std::vector<T>& src);
+![write](img/write.png)
+
+---
+
+#### void dump();
+![dump](img/result.png)
+
+---
 
 ## Usage
 
@@ -94,7 +121,6 @@ For more examples of how to use the library, see the `examples` directory.
 | 11 | `void dump()` | This function dumps information about all allocated memory blocks to the standard output. For each block, it prints its starting address, content (as a comma-separated list), size, and state (used or not used). It also prints the type of the block, which is set by the `write` function. If the block contains non-trivially copyable types, the content is printed as a list of characters. |
 
 Note that these two functions are not standard library functions, but rather appear to be part of a custom memory management system implemented by the user.
-
 
 ## License
 
