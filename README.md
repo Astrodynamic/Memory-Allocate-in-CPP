@@ -1,10 +1,10 @@
-# MemoryLogic in CPP
+# Memory Allocate in CPP
 
 This project is an implementation of a memory management library written in C++. The library provides functionality for allocating and freeing memory, and it includes implementations of the `malloc`, `calloc`, `realloc`, and `free` functions.
 
 ## Table of Contents
 
-- [MemoryLogic in CPP](#memorylogic-in-cpp)
+- [Memory Allocate in CPP](#memory-allocate-in-cpp)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Building the Project](#building-the-project)
